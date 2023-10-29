@@ -1,0 +1,131 @@
+body{
+    background: linear-gradient(360deg, #330066 0%, #593ffe 100%); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+                    
+}
+
+.container{
+    max-width: 1024px;
+    height: 100vh;    
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: aliceblue;
+    background: rgb(177, 64, 177);
+    padding: 1rem;
+    border-radius: 3vh 0vh;
+    animation: backInUp 1s ;
+}
+
+
+@keyframes backInUp {
+0% {
+-webkit-transform: translateY(-200px) scale(0.7);
+transform: translateY(-200px) scale(0.7);
+opacity: 0.7;
+transition: 2s;
+
+
+
+}
+
+80% {
+-webkit-transform: translateY(0px) scale(0.7);
+transform: translateY(0px) scale(0.7);
+opacity: 0.7;
+background: rgb(255, 255, 255);
+color: white;
+transition: 2s;
+
+
+}
+
+
+}
+.animate__backInUp {
+-webkit-animation-name: backInUp;
+animation-name: backInUp;
+transition: 2s;
+
+}
+
+
+
+.table {
+    display: flex;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 100%;
+
+}
+
+.gameButton{
+    background: transparent;
+    border: none;
+    transition: 0.5s ease-out;
+
+}
+
+.gameButton :hover{
+    background: transparent;
+    border: none;
+    scale: 125%;
+    transition: 0.5s ease-in;
+    animation: fadeIn 1s infinite;
+    
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0.25;
+}
+
+to {
+opacity: 1;
+}
+
+
+}
+.animate__fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+animation-duration: timeInSecs;
+-webkit-animation-duration: timeInSecs;
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+}
+
+
+.Score{
+    color: azure;
+text-align: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Score button {
+    padding: 1rem;
+    width: 15rem;
+    background-color: blueviolet;
+    color: #eeeeee;
+    box-shadow: #330066;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 0.2rem white;
+    transition: 0.2s;
+}
+
+.Score button:hover {
+    background: white;
+    color: #330066;
+    transition: 0.5s;
+    width: 20rem;
+}
